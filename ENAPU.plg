@@ -1,0 +1,57 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ENAPU - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\WINDOWS\TEMP\RSP2323.TMP" with contents
+[
+/nologo /MTd /W3 /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/ENAPU.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"H:\Enapu\Menu.cpp"
+]
+Creating command line "cl.exe @C:\WINDOWS\TEMP\RSP2323.TMP" 
+Creating temporary file "C:\WINDOWS\TEMP\RSP2324.TMP" with contents
+[
+ntwdblib.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/ENAPU.pdb" /debug /machine:I386 /out:"Debug/ENAPU.exe" /pdbtype:sept 
+.\Debug\ALMACENA.OBJ
+.\Debug\Carga.obj
+.\Debug\CHOFER.OBJ
+.\Debug\Condicion_Contenedores.obj
+.\Debug\Console.obj
+.\Debug\DESCARGA.OBJ
+.\Debug\EMBARQUE.OBJ
+.\Debug\ENAPU.obj
+.\Debug\Equipos_Accesorios.obj
+.\Debug\Estado_Contenedores.obj
+.\Debug\Keyboard.obj
+.\Debug\MENSAJES.OBJ
+.\Debug\Menu.obj
+.\Debug\Muelles_Amarradores.obj
+.\Debug\PLACAS.OBJ
+.\Debug\Portuario.obj
+.\Debug\RODANTE.OBJ
+.\Debug\Scroller.obj
+.\Debug\scrollerV.obj
+.\Debug\scrollh.obj
+.\Debug\SqlServer.obj
+.\Debug\STR.OBJ
+.\Debug\Stristr.obj
+".\Debug\Tipo Contenedores.obj"
+.\Debug\Vanes.obj
+.\Debug\Window.obj
+]
+Creating command line "link.exe @C:\WINDOWS\TEMP\RSP2324.TMP"
+<h3>Output Window</h3>
+Compiling...
+Menu.cpp
+Linking...
+
+
+
+<h3>Results</h3>
+ENAPU.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

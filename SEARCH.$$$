@@ -1,0 +1,92 @@
+
+//#include "Console.h"
+#include "Window.h"
+#include "stdio.h"
+
+
+Window::Window (void )
+{
+	Init();	
+	return;
+}
+
+
+Window::Window (char x, char y, char x1, char y1, Console con)
+{
+	Init(x, y,x1,y1,con);
+	return;
+}
+
+
+void Window::Init(char x, char y, char x1, char y1, Console con)
+{
+	SubTitle [0] = '\0';
+	xabs   = x + 1;
+	yabs   = y + 1;
+	x1abs  = x1 -1;
+	y1abs  = y1 -1;
+
+	currow = 0;
+	oldrow = 1;
+	options = 0 ;
+	rowend = x1-x -1;
+	curritem = 0;
+	menuitems = -1;
+	scr = con;
+	Init();
+
+	return;
+}
+
+
+
+void Window::Init(void)
+{
+	SaveScr();
+	scr.vm_init();
+}
+
+void Window::SaveScr(void)
+{
+    
+    scr.vioImageDefaults(&sysimage);
+    scr.vioImageInit(&sysimage, scr.vm_getscreenwidth(), scr.vm_getscreenheight());
+    scr.vioImageSave(&sysimage, 1, 1);
+	return;
+}
+
+void Window::Show(void)
+{
+	int item;
+	scr.vm_setcursorstyle(CURSORHIDE);
+
+
+	scr.vm_paintbox(yabs -1, xabs -1 , y1abs + 1, x1abs +1 , vm_mkcolor(LIGHTGRAY,BLACK));
+	
+    scr.vm_paintclearbox(yabs -1 , xabs -1 , y1abs +1 , x1abs + 1, vm_mkcolor(LIGHTGRAY, BLACK));
+    
+	scr.vm_frame(yabs -1 , xabs -1 , y1abs +1 , x1abs + 1 , vm_mkcolor( LIGHTGRAY, BLACK), FRAME_DOUBLE);
+	
+	if (SubTitle[0] != 0)
+		{
+		scr.vm_puts((char) yabs, (char) (xabs), SubTitle);	
+		xabs ++;
+		options--;
+		}	
+
+
+}
+
+void Window::Close(void)
+{
+    scr.vioImageRestore(&sysimage, 1, 1);
+    scr.vioImageTerm(&sysimage);
+    scr.vm_gotoxy(vm_startup.xpos, vm_startup.ypos);
+    //scr.vm_done();
+}
+
+void Window::SetSubTitle(char *Subt)
+{
+strcpy(SubTitle, Subt);
+return;
+}

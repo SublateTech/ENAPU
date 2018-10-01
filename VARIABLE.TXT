@@ -1,0 +1,147 @@
+CREATE TABLE  dbo . Atendido  [
+	
+	
+	
+	
+	
+	
+]; ON  PRIMARY
+GO
+
+CREATE TABLE  dbo . Brevete  [
+
+
+
+
+
+
+
+
+
+]; ON  PRIMARY
+GO
+
+CREATE TABLE  dbo . Carga_Rodante  [
+
+
+
+
+
+
+
+
+
+
+
+]; ON  PRIMARY
+GO
+
+CREATE TABLE  dbo . Consulta_Muelles  [
+
+
+
+
+
+
+
+
+
+
+]; ON  PRIMARY
+GO
+
+CREATE TABLE  dbo . Informacion  [
+
+
+
+
+
+
+
+
+
+
+]; ON  PRIMARY
+GO
+
+CREATE TABLE  dbo . Tareas  [
+
+
+
+
+]; ON  PRIMARY
+GO
+
+CREATE TABLE  dbo . Tareas_Embarque_Contenedores  [
+
+
+
+
+]; ON  PRIMARY
+GO
+
+CREATE TABLE  dbo . Ticket_Balanza  [
+
+
+
+
+
+
+
+
+
+
+
+
+]; ON  PRIMARY
+GO
+
+CREATE TABLE  dbo . Tickets_Balanza  [
+
+
+
+
+
+
+
+
+
+
+
+
+
+]; ON  PRIMARY
+GO
+
+CREATE TABLE  dbo . Ubicacion_Carga  [
+
+
+
+
+
+
+
+
+
+
+
+]; ON  PRIMARY
+GO
+
+CREATE TABLE  dbo . Ubicacion_Contenedores  [
+	 Contenedor		   [13];
+	 Condicion		  [5];
+	 Precinto   var 	    [16];
+	 Tamano 	       [4];
+	 Tipo		     [4];
+	 Estado 	       [4];
+	 Tara		     [4];
+	 Peso		     [5];
+	 Manifiesto		   [9];
+	 Nave	var		[50];
+	 Area	var		[50];
+	 Ubi_1		      [8];
+	 Ubi_2		      [8];
+]; ON  PRIMARY
+GO
+

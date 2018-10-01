@@ -1,0 +1,60 @@
+--------------------Configuration: Menu - Win32 Debug--------------------
+Begining build with project "C:\Enapu\Menu.dsp", at root.
+Active configuration is Win32 (x86) Console Application (based on Win32 (x86) Console Application)
+
+Project's tools are:
+			"32-bit C/C++ Compiler for 80x86" with flags "/nologo /MLd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Menu.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c "
+			"Win32 Resource Compiler" with flags "/l 0xc0a /d "_DEBUG" "
+			"Browser Database Maker" with flags "/nologo /o"Debug/Menu.bsc" "
+			"COFF Linker for 80x86" with flags "kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Menu.pdb" /debug /machine:I386 /out:"Debug/Menu.exe" /pdbtype:sept "
+			"Custom Build" with flags ""
+			"<Component 0xa>" with flags ""
+
+Creating temp file "C:\TEMP\RSP9.tmp" with contents </nologo /MLd /W3 /Gm /GX /Zi /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/Menu.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /c 
+"C:\Enapu\Menu.cpp"
+>
+Creating command line "cl.exe @C:\TEMP\RSP9.tmp" 
+Creating temp file "C:\TEMP\RSPA.tmp" with contents <kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/Menu.pdb" /debug /machine:I386 /out:"Debug/Menu.exe" /pdbtype:sept 
+.\Debug\Menu.obj>
+Creating command line "link.exe @C:\TEMP\RSPA.tmp" 
+Compiling...
+Menu.cpp
+Linking...
+Menu.obj : error LNK2001: unresolved external symbol "public: __thiscall Inputs::Inputs(void)" (??0Inputs@@QAE@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: __thiscall Consola::Consola(void)" (??0Consola@@QAE@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: __thiscall SqlServer::SqlServer(void)" (??0SqlServer@@QAE@XZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall SqlServer::Close_Db(void)" (?Close_Db@SqlServer@@QAEXXZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Mensajes::Execute(void)" (?Execute@Mensajes@@QAEXXZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: __thiscall Mensajes::Mensajes(void *)" (??0Mensajes@@QAE@PAX@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Chofer::Execute(void)" (?Execute@Chofer@@QAEXXZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: __thiscall Chofer::Chofer(void *)" (??0Chofer@@QAE@PAX@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Placas::Execute(void)" (?Execute@Placas@@QAEXXZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: __thiscall Placas::Placas(void *)" (??0Placas@@QAE@PAX@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Consola::scroll(int,int,int,int,int)" (?scroll@Consola@@QAEXHHHHH@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Muelles::Execute(void)" (?Execute@Muelles@@QAEXXZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: __thiscall Muelles::Muelles(void *)" (??0Muelles@@QAE@PAX@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Portuario::Execute(void)" (?Execute@Portuario@@QAEXXZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: __thiscall Portuario::Portuario(void *)" (??0Portuario@@QAE@PAX@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Almacena::Execute(void)" (?Execute@Almacena@@QAEXXZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: __thiscall Almacena::Almacena(void *)" (??0Almacena@@QAE@PAX@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Embarque::Execute(void)" (?Execute@Embarque@@QAEXXZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: __thiscall Embarque::Embarque(void *)" (??0Embarque@@QAE@PAX@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Descarga::Execute(void)" (?Execute@Descarga@@QAEXXZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: __thiscall Descarga::Descarga(void *)" (??0Descarga@@QAE@PAX@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Rodante::Execute(void)" (?Execute@Rodante@@QAEXXZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: __thiscall Rodante::Rodante(void *,class Consola)" (??0Rodante@@QAE@PAXVConsola@@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Carga::Execute(void)" (?Execute@Carga@@QAEXXZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: __thiscall Carga::Carga(void *,class Consola)" (??0Carga@@QAE@PAXVConsola@@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Vanes::Execute(void)" (?Execute@Vanes@@QAEXXZ)
+Menu.obj : error LNK2001: unresolved external symbol "public: __thiscall Vanes::Vanes(void *,class Consola)" (??0Vanes@@QAE@PAXVConsola@@@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Consola::write(char *)" (?write@Consola@@QAEXPAD@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Consola::color(unsigned short)" (?color@Consola@@QAEXG@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Consola::gotoxy(char,char)" (?gotoxy@Consola@@QAEXDD@Z)
+Menu.obj : error LNK2001: unresolved external symbol "public: void __thiscall Consola::cls(void)" (?cls@Consola@@QAEXXZ)
+LIBCD.lib(crt0.obj) : error LNK2001: unresolved external symbol _main
+Debug/Menu.exe : fatal error LNK1120: 32 unresolved externals
+Error executing link.exe.
+
+
+
+Menu.exe - 33 error(s), 0 warning(s)
